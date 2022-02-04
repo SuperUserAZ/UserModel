@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdullayev Elchin">
+    <meta name="keywords" content="Login Page">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Login Page</title>
+</head>
+<body>
+    <article class="container">
+
+        <div class="block">
+
+            <form action="" method="post"  class="login-form">
+                <h3 class="login-form__title ">Вход</h3>
+                <p>
+                    <input type="email" required placeholder="email" class="login-form__input">
+                </p>
+                <p>
+                    <input type="password" required placeholder="password" class="login-form__input">
+                </p>
+                <button class="block-item__btn" id="log-btn" type="submit">Войти</button>
+            </form>
+        </div>
+    </article>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

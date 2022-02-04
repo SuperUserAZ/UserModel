@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdullayev Elchin">
+    <meta name="keywords" content="Registration page">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <title>Registration Form</title>
+    
+</head>
+<body>
+    <article class="container">
+
+        <div class="block">
+
+            <section class="block__item block-item">
+                <h2 class="block-item__title">У вас уже есть аккаунт?</h2>
+                <button class="block-item__btn " id="main-log-btn" type="menu">Войти</button>
+            </section>
+            <section class="block__item block-item">
+                <h2 class="block-item__title">У вас нет аккаунта?</h2>
+                <button class="block-item__btn" id="main-sign-btn" type="menu">Зарегестрироваться</button>
+            </section>
+        </div>
+    </article>
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+
