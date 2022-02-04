@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #03a9f4;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    padding: 40px 0;
+
+}
+
+
+.block {
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block-item {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+
+.block-item__title, 
+.login-form__title,
+.signup-form__title,
+.img-icon__title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+
+.block-item__btn {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    color: #333;
+    background-color: #FFF5EE;
+    font-size: 16px;
+    font-weight: 500px;
+    cursor: pointer;
+
+    transition-property: color, background, transform;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
+    
+}
+
+.block-item__btn:hover {
+    color: #fff;
+    background-color: rgb(255, 36, 0);
+    transform: scale(1.05);
+}
+
+#main-log-btn,
+#main-sign-btn {
+    width: 100%;
+}
+
+
+/*todo //////////////Login/Sign up page//////////////*/
+.login-form__input,
+.signup-form__input {
+    padding: 10px;
+    font-size: inherit;
+}
+
+#log-btn,
+#signup-btn {
+    width: 100%;
+}
+
+input[type="file"] {
+    display: none;
+    border: thin solid;
+}
+ 
+.img-icon {
+    padding: 0 0 16px 0;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.profile-image-svg {
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: #FFBF00;
+    margin-right: 15px;
+    transition-property: transform;
+    transition-duration: 150ms;
+}
+.profile-image-svg:hover {
+    opacity: .8;
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+
+.img-icon__title {
+    font-size: 16px;
+}
+/*//////////////Profile page//////////////*/ 
+.prf-container {
+    width: 1000px;
+    padding: 50px 0;
+
+}
+
+.core-prf-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(239,243,255);
+    box-shadow: 0 5px 45px rgba(255, 255, 255, .5);   
+    padding: 50px 0; 
+}
+
+.core-prf-container__img.prf-img {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prf-img__border {
+    height: 200px;
+    width: 200px;
+    background-image: url('../images/Default-Profile.png');
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+
+}
+
+.prf-img__border:hover {
+    opacity: 0.8;
+}
+
+.prf-icon-svg {
+    width: 30px;
+    height: 30px;
+    transition-property: transform;
+    transition-duration: 150ms;
+
+}
+.prf-icon-svg:hover {
+    opacity: .8;
+    cursor: pointer;
+    border-radius: 5px;
+    border: thin dashed;
+    transform: scale(1.15);
+}
+
+.prf-name {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+

@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Sign Up Page
+{% endblock %}
+
+
+{% block forma %}
+    <form method="post" class="signup-form">
+
+        {% csrf_token %}
+        {{ form.user_name }}
+        {{ form.user_last_name }}
+        {{ form.user_email }}
+        {{ form.user_password }}
+         
+        <h3 class="signup-form__title">Registration</h3>
+        <p>
+            <input type="text" placeholder="Name" required maxlength="15" class="signup-form__input">
+        </p>
+        <p>
+            <input type="text" placeholder="Last Name" required maxlength="15" class="signup-form__input">
+        </p>
+        <p>
+            <input type="email" placeholder="Email" required maxlength="30" class="signup-form__input">
+        </p>
+        <p>
+            <input type="password" placeholder="Password" required maxlength="15" class="signup-form__input">
+        </p>
+        <button class="block-item__btn" id="signup-btn" type="submit">Sign up</button>
+    </form>
+    <span>{{ error }}</span> 
+
+{% endblock %}
+

@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+    Login Page
+{% endblock %}
+
+
+{% block forma %}
+    
+    <form action="" method="post"  class="login-form">
+        <h3 class="login-form__title ">Login</h3>
+        <p>
+            <input type="email" required placeholder="email" class="login-form__input">
+        </p>
+        <p>
+            <input type="password" required placeholder="password" class="login-form__input">
+        </p>
+        <button class="block-item__btn" id="log-btn" type="submit">Enroll</button>
+    </form>
+
+{% endblock %}
+
+

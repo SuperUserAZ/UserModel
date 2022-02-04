@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap');
+
+
+body {
+    background-color: #03a9f4; /* #eeeeee; */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* outline: thin solid; */
+}
+.first-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-box__img,
+.first-box__content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+#first-part {
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+#second-part {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+
+#main-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url('../images/profile_default_image.png');
+    background-size: contain;
+    outline: thin solid;
+}
+
+.first-box,
+.second-box {
+    width: 100%;
+    height: 240px;
+    background-color:#eeeeee;
+    border-radius: 8px;
+    transition-property: transform;
+    transition-duration: .2s;
+}
+
+.second-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.first-box:hover,
+.second-box:hover {
+    box-shadow: 0 5px 45px rgba(0, 0, 0, .3);
+    transform: scale(1.02);
+    
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.prf-icon-svg {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.wrapper-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.wrapper-icon:hover {
+    cursor: pointer;
+    border: thin dashed;
+}
+
+.first-box__content_name {
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.second-box,
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.profile-form {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.profile-input {
+    padding: 10px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+
+
