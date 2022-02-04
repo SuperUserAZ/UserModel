@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap');
 
-/*
-font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;
-
-rgb(247, 249, 249)
-rgb(225, 193, 110)
-*/
 
 body {
-    background-color: #eeeeee;
+    background-color: #03a9f4;
     height: 100vh;
     margin: 0;
     display: flex;
@@ -61,7 +54,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: url('../images/Default-Profile.png');
+    background: url('images/profile_default_image.png');
     background-size: contain;
     outline: thin solid;
 }
@@ -70,7 +63,7 @@ body {
 .second-box {
     width: 100%;
     height: 240px;
-    background-color: rgba(255, 255, 255, .8);
+    background-color:#eeeeee;
     border-radius: 8px;
     transition-property: transform;
     transition-duration: .2s;
@@ -85,7 +78,7 @@ body {
 
 .first-box:hover,
 .second-box:hover {
-    box-shadow: 0 5px 45px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 45px rgba(0, 0, 0, .3);
     transform: scale(1.02);
     
 }
